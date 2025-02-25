@@ -1,0 +1,1 @@
+Backend made in Node.js, using TypeScript where we implement the Clean Architecture principles
