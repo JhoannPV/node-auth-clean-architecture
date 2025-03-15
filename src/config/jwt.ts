@@ -10,8 +10,6 @@ export class JwtAdapter {
     ): Promise<string | null> {
 
         return new Promise((resolve) => {
-
-            //todo: generación del seed
             jwt.sign(payload, JWT_SEED, { expiresIn: duration }, (err, token) => {
                 if (err) return resolve(null);
                 resolve(token!);
